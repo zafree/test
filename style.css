@@ -32,7 +32,7 @@ body {
   line-height: 1.8571428571428568em;
 
   overflow-wrap: break-word; }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   body {
     font-size: 71.42857142857143%; } }
 
@@ -62,7 +62,7 @@ a {
 
 abbr[title] {
   text-decoration: underline;
-  text-decoration: underline dotted;
+  text-decoration: underline dotted; 
   border-bottom: none; }
 
 svg:not(:root) {
@@ -72,7 +72,7 @@ svg:not(:root) {
 h1 {
   margin-bottom: 1em;
   letter-spacing: 0.0468em;
-  text-transform: uppercase;
+  text-transform: uppercase; 
   font-family: "Fjalla One", sans-serif;
   font-size: 3em;
   line-height: 1em; }
@@ -82,20 +82,21 @@ h2 {
   letter-spacing: 0.0234em;
   text-transform: uppercase;
   color: #7c5e9f;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ffb948), color-stop(#ff43ad), to(#a732ff));
   background: -webkit-linear-gradient(top left, #ffb948, #ff43ad, #a732ff);
   background:         linear-gradient(to bottom right, #ffb948, #ff43ad, #a732ff);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-family: "Fjalla One", sans-serif;
-  font-size: 8.5em;
+  font-size: 9em;
   line-height: 1.1111em;
 
+  -webkit-text-fill-color: transparent;
   -webkit-filter: drop-shadow(0 0.15em 0.15em rgba(0, 0, 0, 0.12));
           filter: drop-shadow(0 0.15em 0.15em rgba(0, 0, 0, 0.12)); }
 
 h3 {
   margin-bottom: 0.9375em;
-  letter-spacing: 0.0436em;
+  letter-spacing: 0.0436em; 
   text-transform: uppercase;
   font-family: "Fjalla One", sans-serif;
   font-size: 3.2em;
@@ -103,7 +104,7 @@ h3 {
 
 p {
   margin-bottom: 1.875em;
-  letter-spacing: -0.003em;
+  letter-spacing: -0.003em; 
   font-family: "Merriweather", serif;
   font-size: 1.6em;
   line-height: 2.1em; }
@@ -141,11 +142,11 @@ abbr[title] {
      -moz-box-direction: reverse;
       -ms-flex-flow: row-reverse wrap;
           flex-flow: row-reverse wrap;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-     -moz-box-pack: end;
-  -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+  -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
   -webkit-align-items: center;
      -moz-box-align: center;
@@ -162,7 +163,7 @@ abbr[title] {
 .design-archives nav ul li a {
   position: relative;
   text-decoration: none;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.06em; 
   text-transform: uppercase;
   color: #00caff;
   font-size: 1.4em; }
@@ -177,13 +178,37 @@ abbr[title] {
   position: relative; }
 .intro header {
   position: relative;
-  min-height: 100vh;
-  padding-top: 130px;
+  padding-top: 130px; 
   padding-right: 30px;
   padding-left: 30px; }
+.intro header::before {
+  position: absolute;
+  z-index: -1; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url("grad-header.svg");
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain; }
+.intro header::after {
+  position: absolute;
+  z-index: -1; 
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url("grad-green.svg");
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain; }
 .intro .summary {
   position: relative;
-  padding-right: 30px;
+  margin-top: 50px;
+  padding-right: 40px; 
   padding-bottom: 35px;
   padding-left: 30px; }
 .intro .summary p:last-child {
@@ -193,9 +218,8 @@ abbr[title] {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 45px;
-  padding-right: 30px;
-  padding-bottom: 45px;
+  padding-right: 30px; 
+  padding-bottom: 30px;
   padding-left: 30px; }
 
 .main {
@@ -211,16 +235,50 @@ abbr[title] {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 45px;
-  padding-right: 30px;
-  padding-bottom: 45px;
+  padding-top: 70px;
+  padding-right: 30px; 
+  padding-bottom: 30px;
   padding-left: 30px; }
+.main .explanation::before,
+.main .participation::before,
+.main .benefits::before,
+.main .requirements::before {
+  position: absolute;
+  z-index: -1; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain; }
+.main .explanation::before {
+  background-image: url("grad-pink.svg"); }
+.main .participation::before {
+  background-image: url("grad-orange.svg"); }
+.main .benefits::before {
+  background-image: url("grad-green.svg"); }
+.main .requirements::before {
+  background-image: url("grad-pink.svg"); }
 .main footer {
   position: relative;
   clear: both;
   height: 200px;
   padding-top: 30px;
   text-align: center; }
+.main footer::before {
+  position: absolute;
+  z-index: -1; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url("grad-footer.svg");
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain; }
 .main footer a {
   position: relative;
   display: inline-block;
@@ -250,14 +308,14 @@ abbr[title] {
 
 .design-archives {
   position: absolute;
-  top: 100%;
+  top: 0;
   right: 0;
   width: 100%;
-  margin-top: -50px;
+  margin-top: 260px; 
   margin-right: 20px;
-  -webkit-transform: rotate(-90deg) translateX(100%);
-      -ms-transform: rotate(-90deg) translateX(100%);
-          transform: rotate(-90deg) translateX(100%);
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   -webkit-transform-origin: 100% 100%;
       -ms-transform-origin: 100% 100%;
           transform-origin: 100% 100%; }
