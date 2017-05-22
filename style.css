@@ -177,7 +177,7 @@ abbr[title] {
   position: relative; }
 .intro header {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 130px;
   padding-right: 30px;
   padding-left: 30px; }
