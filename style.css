@@ -79,6 +79,7 @@ h1 {
 
 h2 {
   display: inline-block;
+  padding-right: 5px;
   letter-spacing: 0.0234em;
   text-transform: uppercase;
   color: #7c5e9f;
