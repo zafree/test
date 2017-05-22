@@ -82,7 +82,9 @@ h2 {
   letter-spacing: 0.0234em;
   text-transform: uppercase;
   color: #7c5e9f;
-  background: -webkit-linear-gradient(280deg, #ffb948, #ff43ad, #a732ff);
+  background: -webkit-gradient(linear, left top, right bottom, from(#ffb948), color-stop(#ff43ad), to(#a732ff));
+  background: -webkit-linear-gradient(top left, #ffb948, #ff43ad, #a732ff);
+  background:         linear-gradient(to bottom right, #ffb948, #ff43ad, #a732ff);
   -webkit-background-clip: text;
   font-family: "Fjalla One", sans-serif;
   font-size: 8.5em;
