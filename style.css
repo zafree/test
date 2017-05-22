@@ -1,0 +1,333 @@
+/**!
+   Version: 1.0.0
+    Author: Zafree
+*/
+/**! 01. Generic */
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  min-width: 320px;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 1.15;
+
+      -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+body {
+  margin: 0;
+  color: #7c5e9f;
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 62.5%;
+  font-weight: normal;
+  line-height: 1.8571428571428568em;
+
+  overflow-wrap: break-word; }
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 71.42857142857143%; } }
+
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+a {
+  margin: 0;
+  padding: 0; }
+
+a {
+  background-color: transparent;
+
+  -webkit-text-decoration-skip: objects; }
+
+abbr[title] {
+  text-decoration: underline;
+  text-decoration: underline dotted; 
+  border-bottom: none; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+/**! 02. Elements */
+h1 {
+  margin-bottom: 1em;
+  letter-spacing: 0.0468em;
+  text-transform: uppercase; 
+  font-family: "Fjalla One", sans-serif;
+  font-size: 3em;
+  line-height: 1em; }
+
+h2 {
+  display: inline-block;
+  letter-spacing: 0.0234em;
+  text-transform: uppercase;
+  background-color: #6122ff;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb948), color-stop(#ff43ad), to(#a732ff));
+  background-image: -webkit-linear-gradient(top left, #ffb948, #ff43ad, #a732ff);
+  background-image:         linear-gradient(to bottom right, #ffb948, #ff43ad, #a732ff);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 8.5em;
+  line-height: 1.1111em;
+
+  -webkit-text-fill-color: transparent;
+     -moz-text-fill-color: transparent;
+      -ms-background-clip: text;
+      -ms-text-fill-color: transparent;
+          text-fill-color: transparent;
+  -webkit-filter: drop-shadow(0 0.15em 0.15em rgba(0, 0, 0, 0.12));
+          filter: drop-shadow(0 0.15em 0.15em rgba(0, 0, 0, 0.12)); }
+
+h3 {
+  margin-bottom: 0.9375em;
+  letter-spacing: 0.0436em; 
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 3.2em;
+  line-height: 1.111em; }
+
+p {
+  margin-bottom: 1.875em;
+  letter-spacing: -0.003em; 
+  font-family: "Merriweather", serif;
+  font-size: 1.6em;
+  line-height: 2.1em; }
+
+a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #00caff;
+  line-height: 1.5; }
+a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background-color: #00caff; }
+
+abbr[title] {
+  text-decoration: none; }
+
+.design-archives nav ul {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:    -moz-box;
+  display: -ms-flexbox;
+  display:         flex;
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-flow: row-reverse wrap;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: reverse;
+      -ms-flex-flow: row-reverse wrap;
+          flex-flow: row-reverse wrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+     -moz-box-pack: end;
+  -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+  -ms-flex-align: center;
+          align-items: center; }
+.design-archives nav ul li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:    -moz-box;
+  display: -ms-flexbox;
+  display:         flex; }
+.design-archives nav ul li.next {
+  margin-left: 40px; }
+.design-archives nav ul li a {
+  position: relative;
+  text-decoration: none;
+  letter-spacing: 0.06em; 
+  text-transform: uppercase;
+  color: #00caff;
+  font-size: 1.4em; }
+.design-archives nav ul li a::after {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background-color: #00caff; }
+
+.intro {
+  position: relative; }
+.intro header {
+  position: relative;
+  height: 100vh;
+  padding-top: 130px; 
+  padding-right: 30px;
+  padding-left: 30px; }
+.intro header::before {
+  position: absolute;
+  z-index: -1; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url("grad-header.svg");
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain; }
+.intro header::after {
+  position: absolute;
+  z-index: -1; 
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: -50px;
+  content: "";
+  background-image: url("grad-green.svg");
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain; }
+.intro .summary {
+  position: relative;
+  padding-right: 30px; 
+  padding-bottom: 35px;
+  padding-left: 30px; }
+.intro .summary p:last-child {
+  display: none; }
+.intro .preamble {
+  position: relative;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 45px;
+  padding-right: 30px; 
+  padding-bottom: 45px;
+  padding-left: 30px; }
+
+.main {
+  position: relative;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+.main .explanation,
+.main .participation,
+.main .benefits,
+.main .requirements {
+  position: relative;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 45px;
+  padding-right: 30px; 
+  padding-bottom: 45px;
+  padding-left: 30px; }
+.main .explanation::before,
+.main .participation::before,
+.main .benefits::before,
+.main .requirements::before {
+  position: absolute;
+  z-index: -1; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain; }
+.main .explanation::before {
+  background-image: url("grad-pink.svg"); }
+.main .participation::before {
+  background-image: url("grad-orange.svg"); }
+.main .benefits::before {
+  background-image: url("grad-green.svg"); }
+.main .requirements::before {
+  background-image: url("grad-pink.svg"); }
+.main footer {
+  position: relative;
+  clear: both;
+  height: 200px;
+  padding-top: 30px;
+  text-align: center; }
+.main footer::before {
+  position: absolute;
+  z-index: -1; 
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url("grad-footer.svg");
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain; }
+.main footer a {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+  margin: 5px;
+  padding: 32px 0 0 0;
+  color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+
+  -webkit-filter: drop-shadow(0 0.15em 0.15em rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 0.15em 0.15em rgba(0, 0, 0, 0.5)); }
+.main footer a::before {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  display: block;
+  overflow: visible;
+  content: "A";
+  text-indent: 0;
+  text-transform: none;
+  font-size: 36px;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1; }
+
+.design-archives {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  margin-top: -50px;
+  margin-right: 20px;
+  -webkit-transform: rotate(-90deg) translateX(100%);
+      -ms-transform: rotate(-90deg) translateX(100%);
+          transform: rotate(-90deg) translateX(100%);
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%; }
+.design-archives .archives {
+  display: none; }
+.design-archives .next .indicator {
+  display: none; }
