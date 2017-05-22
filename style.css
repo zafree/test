@@ -62,7 +62,7 @@ a {
 
 abbr[title] {
   text-decoration: underline;
-  text-decoration: underline dotted; 
+  text-decoration: underline dotted;
   border-bottom: none; }
 
 svg:not(:root) {
@@ -72,7 +72,7 @@ svg:not(:root) {
 h1 {
   margin-bottom: 1em;
   letter-spacing: 0.0468em;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   font-family: "Fjalla One", sans-serif;
   font-size: 3em;
   line-height: 1em; }
@@ -82,19 +82,17 @@ h2 {
   letter-spacing: 0.0234em;
   text-transform: uppercase;
   color: #7c5e9f;
-  background: -webkit-gradient(linear, left top, right bottom, from(#ffb948), color-stop(#ff43ad), to(#a732ff));
   background: -webkit-linear-gradient(top left, #ffb948, #ff43ad, #a732ff);
   background:         linear-gradient(to bottom right, #ffb948, #ff43ad, #a732ff);
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "Fjalla One", sans-serif;
   font-size: 8.5em;
-  line-height: 1.1111em;
-
-  -webkit-text-fill-color: transparent; }
+  line-height: 1.1111em; }
 
 h3 {
   margin-bottom: 0.9375em;
-  letter-spacing: 0.0436em; 
+  letter-spacing: 0.0436em;
   text-transform: uppercase;
   font-family: "Fjalla One", sans-serif;
   font-size: 3.2em;
@@ -102,7 +100,7 @@ h3 {
 
 p {
   margin-bottom: 1.875em;
-  letter-spacing: -0.003em; 
+  letter-spacing: -0.003em;
   font-family: "Merriweather", serif;
   font-size: 1.6em;
   line-height: 2.1em; }
@@ -161,7 +159,7 @@ abbr[title] {
 .design-archives nav ul li a {
   position: relative;
   text-decoration: none;
-  letter-spacing: 0.06em; 
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #00caff;
   font-size: 1.4em; }
@@ -177,12 +175,12 @@ abbr[title] {
 .intro header {
   position: relative;
   height: 100vh;
-  padding-top: 130px; 
+  padding-top: 130px;
   padding-right: 30px;
   padding-left: 30px; }
 .intro .summary {
   position: relative;
-  padding-right: 30px; 
+  padding-right: 30px;
   padding-bottom: 35px;
   padding-left: 30px; }
 .intro .summary p:last-child {
@@ -193,7 +191,7 @@ abbr[title] {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
   padding-top: 45px;
-  padding-right: 30px; 
+  padding-right: 30px;
   padding-bottom: 45px;
   padding-left: 30px; }
 
@@ -211,7 +209,7 @@ abbr[title] {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
   padding-top: 45px;
-  padding-right: 30px; 
+  padding-right: 30px;
   padding-bottom: 45px;
   padding-left: 30px; }
 .main footer {
