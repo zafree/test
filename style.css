@@ -71,15 +71,45 @@ svg:not(:root) {
 /**! 02. Elements */
 h1 {
   margin-bottom: 1em;
+  -webkit-animation: fromRight 1.3s ease-out;
+          animation: fromRight 1.3s ease-out; 
   letter-spacing: 0.0468em;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   font-family: "Fjalla One", sans-serif;
   font-size: 3em;
   line-height: 1em; }
-
+@-webkit-keyframes fromRight {
+  0% {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px); 
+    opacity: 0; }
+  60% {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px); 
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); 
+    opacity: 1; } }
+@keyframes fromRight {
+  0% {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px); 
+    opacity: 0; }
+  60% {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px); 
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); 
+    opacity: 1; } }
 h2 {
+  position: relative;
   display: inline-block;
   padding-right: 10px;
+  -webkit-animation: fromDown 0.8s ease-out;
+          animation: fromDown 0.8s ease-out; 
   letter-spacing: 0.0234em;
   text-transform: uppercase;
   color: #7c5e9f;
@@ -94,6 +124,32 @@ h2 {
   -webkit-text-fill-color: transparent;
   -webkit-filter: drop-shadow(0 0.15em 0.15em rgba(0, 0, 0, 0.12));
           filter: drop-shadow(0 0.15em 0.15em rgba(0, 0, 0, 0.12)); }
+@-webkit-keyframes fromDown {
+  0% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3); 
+    opacity: 0; }
+  30% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3); 
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); 
+    opacity: 1; } }
+@keyframes fromDown {
+  0% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3); 
+    opacity: 0; }
+  30% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3); 
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); 
+    opacity: 1; } }
 @media screen and (min-width: 320px) and (max-width: 370px) {
   h2 {
     font-size: 7.2em; } }
@@ -113,7 +169,8 @@ a {
 abbr[title] {
   text-decoration: none; }
 
-.intro abbr[title],
+.summary abbr[title],
+.preamble abbr[title],
 .main abbr[title] {
   position: relative;
   display: inline-block;
@@ -237,8 +294,65 @@ abbr[title] {
   display:    -moz-box;
   display: -ms-flexbox;
   display:         flex; }
+.design-archives nav ul li.viewall {
+  -webkit-animation: viewall 2s ease-out;
+          animation: viewall 2s ease-out; }
+@-webkit-keyframes viewall {
+  0% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px); 
+    opacity: 0; }
+  70% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px); 
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); 
+    opacity: 1; } }
+@keyframes viewall {
+  0% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px); 
+    opacity: 0; }
+  70% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px); 
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); 
+    opacity: 1; } }
 .design-archives nav ul li.next {
-  margin-left: 40px; }
+  margin-left: 40px;
+  -webkit-animation: next 2.3s ease-out;
+          animation: next 2.3s ease-out; }
+@-webkit-keyframes next {
+  0% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px); 
+    opacity: 0; }
+  70% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px); 
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); 
+    opacity: 1; } }
+@keyframes next {
+  0% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px); 
+    opacity: 0; }
+  70% {
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px); 
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); 
+    opacity: 1; } }
 .design-archives nav ul li a {
   position: relative;
   text-decoration: none;
